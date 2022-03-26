@@ -8,13 +8,13 @@ const Navbar = () => {
         <Link to='/'>Addjective</Link>
       </li>
       <li>
-        <Link to='/tarina1'>Tarina 1</Link>
+        <Link to='/tarina/1'>Tarina 1</Link>
       </li>
       <li>
-        <Link to='/tarina2'>Tarina 2</Link>
+        <Link to='/tarina/2'>Tarina 2</Link>
       </li>
       <li>
-        <Link to='/tarina3'>Tarina 3</Link>
+        <Link to='/tarina/3'>Tarina 3</Link>
       </li>
     </>
   )

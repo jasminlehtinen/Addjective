@@ -1,0 +1,8 @@
+.footer-flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-background {
+  background-color: #D5CCEE;
+}

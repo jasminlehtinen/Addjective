@@ -1,0 +1,15 @@
+.navbar-flexbox {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.navbar-background {
+  background-image: linear-gradient(to right, #64717C, #D5CCEE, #D5B9BD);
+}
+
+li {
+  list-style-type: none;
+}

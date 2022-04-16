@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 const Stories = () => {
-
   const { id } = useParams()
+  const [textarea, setTextarea] = useState('')
+
+  const handleChange = (event) => {
+    setTextarea(event.target.value)
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const data = document.getElementById('data')
+    console.log(data.value)
+  }
 
   const SwitchStory = ({ page }) => {
     switch(page) {
@@ -22,6 +32,15 @@ const Stories = () => {
     <>
       <div className='content'>
         <SwitchStory page={id}/>
+        <form noValidate onSubmit={handleSubmit}>
+          <textarea 
+            type='text' 
+            id='data' 
+            placeholder='Lisää adjektiiveja' 
+            value={textarea} 
+            onChange={handleChange} />
+          <button type='submit'>Lisää</button>
+        </form>
       </div>
     </>
   )

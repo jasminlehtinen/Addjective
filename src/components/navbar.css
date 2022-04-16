@@ -1,13 +1,38 @@
-.navbar-flexbox {
+.navbar--flexbox {
   padding: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   gap: 100px;
 }
 
-.navbar-background {
+.navbar--gradient {
   background-image: linear-gradient(to right, #64717C, #D5CCEE, #D5B9BD);
+}
+
+.links--flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.link--decoration {
+  text-decoration: none;
+}
+
+.link--decoration__white {
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+.link--decoration__black {
+  color: #12130F;
+  margin: 2em;
+}
+
+.link--decoration__black:hover {
+  text-decoration: underline;
 }
 
 li {

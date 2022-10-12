@@ -1,6 +1,7 @@
 .footer-flexbox {
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 
 .footer-background {

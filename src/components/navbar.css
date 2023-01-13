@@ -8,7 +8,11 @@
 }
 
 .navbar--gradient {
-  background-image: linear-gradient(to right, #64717C, #D5CCEE, #D5B9BD);
+  background: 
+    linear-gradient(#64717C, transparent),
+    linear-gradient(to top left, #D5B9BD, transparent),
+    linear-gradient(to top right, #D5CCEE, transparent);
+  background-blend-mode: screen;
 }
 
 .links--flexbox {
@@ -21,13 +25,13 @@
   text-decoration: none;
 }
 
-.link--decoration__white {
-  color: #FFFFFF;
+.link--decoration__black {
+  color: #12130F;
   font-size: 2em;
 }
 
-.link--decoration__black {
-  color: #12130F;
+.link--decoration__gray {
+  color: #333333;
   margin: 2em;
 }
 

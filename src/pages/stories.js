@@ -24,6 +24,11 @@ const Stories = () => {
     setShow(data.value)
   }
 
+  const handleReset = (event) => {
+    event.preventDefault()
+    setTextarea('')
+  }
+
   const SwitchStory = ({ page }) => {
     switch(page) {
       case '1':
@@ -212,7 +217,7 @@ const Stories = () => {
     <>
       <div className='content'>
         <SwitchStory page={id}/>
-        <form noValidate onSubmit={handleSubmit}>
+        <form noValidate onSubmit={handleSubmit} onReset={handleReset}>
           <textarea 
             type='text' 
             id='data' 
@@ -220,6 +225,7 @@ const Stories = () => {
             value={textarea} 
             onChange={handleChange} />
           <button type='submit'>Lisää</button>
+          <button type='reset'>Tyhjennä</button>
         </form>
       </div>
     </>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className='footer-flexbox footer-background'>
-        Footer
+        <p>Footer</p>
       </div>
     </>
   )

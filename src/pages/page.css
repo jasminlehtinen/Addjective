@@ -1,4 +1,9 @@
 .content {
   height: 100%;
   display: flex;
+  margin: 50px;
+}
+
+textarea {
+  height: 300px;
 }

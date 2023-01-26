@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
+import './page.css'
 
 const Stories = () => {
   const { id } = useParams()
@@ -17,6 +18,11 @@ const Stories = () => {
     setAdjCount(event.target.value.split(', ').length)
   }
 
+  const handleAdjReset = (event) => {
+    event.preventDefault()
+    setShow([])
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault()
     const data = document.getElementById('data')
@@ -24,9 +30,10 @@ const Stories = () => {
     setShow(data.value)
   }
 
-  const handleReset = (event) => {
+  const handleFormReset = (event) => {
     event.preventDefault()
     setTextarea('')
+    setAdjCount(0)
   }
 
   const SwitchStory = ({ page }) => {
@@ -73,9 +80,6 @@ const Stories = () => {
                   Ja niin kaikki kolme pukkia pääsivät turvallisesti niitylle. 
                   Ruoho oli {shuffledAdj[9]} ja pukit söivät vatsansa niin täyteen, että tuskin jaksoivat kävellä kotiin. Sen pituinen se.
                 </p>
-                <div>
-                  <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
-                </div>
               </div>
       case '2':
         return <div>
@@ -145,9 +149,6 @@ const Stories = () => {
                 <p>
                   Ja niin kolme nokkelaa possua elelivät tiilitalossaan onnellisena elämänsä loppuun asti. Sen pituinen se.
                 </p>
-                <div>
-                  <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
-                </div>
               </div>
       case '3':
         return <div>
@@ -204,9 +205,6 @@ const Stories = () => {
                 </p>
                 <p>”Harmi, että tytölle tuli niin kova kiire”, tuumi Pikku-Karhu. ”Olisin kovin mielelläni leikkinyt hänen kanssaan.</p>
                 <p>Mutta Kultakutri ei enää koskaan uskaltautunut metsään yksin, eikä hän enää ikinä palannut karhujen talolle. Sen pituinen se.</p>
-                <div>
-                  <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
-                </div>
               </div>
       default:
         return 'Error.'
@@ -216,17 +214,23 @@ const Stories = () => {
   return (
     <>
       <div className='content'>
-        <SwitchStory page={id}/>
-        <form noValidate onSubmit={handleSubmit} onReset={handleReset}>
-          <textarea 
-            type='text' 
-            id='data' 
-            placeholder='Lisää adjektiiveja' 
-            value={textarea} 
-            onChange={handleChange} />
-          <button type='submit'>Lisää</button>
-          <button type='reset'>Tyhjennä</button>
-        </form>
+        <div>
+          <SwitchStory page={id}/>
+          <button onClick={handleAdjReset}>Tyhjennä</button>
+        </div>
+        <div>
+          <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
+          <form noValidate onSubmit={handleSubmit} onReset={handleFormReset}>
+            <textarea 
+              type='text' 
+              id='data' 
+              placeholder='Lisää adjektiiveja' 
+              value={textarea} 
+              onChange={handleChange} />
+            <button type='submit'>Lisää</button>
+            <button type='reset'>Tyhjennä</button>
+          </form>
+        </div>
       </div>
     </>
   )

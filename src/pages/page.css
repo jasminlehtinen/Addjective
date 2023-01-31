@@ -1,6 +1,11 @@
 .content {
   display: flex;
+  justify-content: space-between;
   margin: 50px;
+}
+
+.content_story {
+  width: 80%;
 }
 
 textarea {

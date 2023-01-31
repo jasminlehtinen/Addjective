@@ -214,7 +214,7 @@ const Stories = () => {
   return (
     <>
       <div className='content'>
-        <div>
+        <div className='content_story'>
           <SwitchStory page={id}/>
           <button onClick={handleAdjReset}>Tyhjennä</button>
         </div>
@@ -227,8 +227,10 @@ const Stories = () => {
               placeholder='Lisää adjektiiveja' 
               value={textarea} 
               onChange={handleChange} />
-            <button type='submit'>Lisää</button>
-            <button type='reset'>Tyhjennä</button>
+            <div>
+              <button type='submit'>Lisää</button>
+              <button type='reset'>Tyhjennä</button>
+            </div>
           </form>
         </div>
       </div>

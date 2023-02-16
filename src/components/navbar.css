@@ -1,18 +1,12 @@
 .navbar--flexbox {
+  background-color: #757083;
+  border-bottom: 1px black solid;
   padding: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-}
-
-.navbar--gradient {
-  background: 
-    linear-gradient(#64717C, transparent),
-    linear-gradient(to top left, #D5B9BD, transparent),
-    linear-gradient(to top right, #D5CCEE, transparent);
-  background-blend-mode: screen;
 }
 
 .links--flexbox {
@@ -23,15 +17,14 @@
 
 .link--decoration {
   text-decoration: none;
+  color: white;
 }
 
-.link--decoration__black {
-  color: #12130F;
+.link--decoration__big {
   font-size: 2em;
 }
 
-.link--decoration__gray {
-  color: #333333;
+.link--decoration__small {
   margin: 2em;
 }
 

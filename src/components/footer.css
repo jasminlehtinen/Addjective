@@ -1,10 +1,7 @@
 .footer-flexbox {
+  background-color: #DBCBD8;
+  border-top: 1px black solid;
   display: flex;
   justify-content: center;
   height: 50px;
-}
-
-.footer-background {
-  background-color: #D5CCEE;
-  opacity: 80%;
 }

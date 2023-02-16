@@ -4,7 +4,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <>
-      <div className='footer-flexbox footer-background'>
+      <div className='footer-flexbox'>
         <p>Footer</p>
       </div>
     </>

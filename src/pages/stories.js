@@ -215,18 +215,22 @@ const Stories = () => {
     <>
       <div className='content'>
         <div className='content_story'>
-          <SwitchStory page={id}/>
+          <div className='content--background content_story--padding'>
+            <SwitchStory page={id}/>
+          </div>
           <button onClick={handleAdjReset}>Tyhjennä</button>
         </div>
-        <div>
-          <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
+        <div className='content_textarea'>
           <form noValidate onSubmit={handleSubmit} onReset={handleFormReset}>
-            <textarea 
-              type='text' 
-              id='data' 
-              placeholder='Lisää adjektiiveja' 
-              value={textarea} 
-              onChange={handleChange} />
+            <div className='content--background'>
+              <textarea 
+                type='text' 
+                id='data' 
+                placeholder='Lisää adjektiiveja' 
+                value={textarea} 
+                onChange={handleChange} />
+            </div>
+            <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
             <div>
               <button type='submit'>Lisää</button>
               <button type='reset'>Tyhjennä</button>

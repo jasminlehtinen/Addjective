@@ -4,10 +4,30 @@
   margin: 50px;
 }
 
+.content--background {
+  background-color: white;
+  border: 1px black solid;
+  box-shadow: 15px 15px #ECFEAA, 15px 15px 0 1px black;
+}
+
 .content_story {
-  width: 80%;
+  width: 75%;
+}
+
+.content_textarea {
+
+}
+
+.content_story--padding {
+  padding: 20px;
 }
 
 textarea {
-  height: 300px;
+  height: 50vh;
+  border: 0;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
 }

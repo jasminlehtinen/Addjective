@@ -218,7 +218,7 @@ const Stories = () => {
           <div className='content--background content_story--padding'>
             <SwitchStory page={id}/>
           </div>
-          <button onClick={handleAdjReset}>Tyhjennä</button>
+          <button onClick={handleAdjReset} className='content_button--border'>Tyhjennä</button>
         </div>
         <div className='content_textarea'>
           <form noValidate onSubmit={handleSubmit} onReset={handleFormReset}>
@@ -231,9 +231,9 @@ const Stories = () => {
                 onChange={handleChange} />
             </div>
             <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
-            <div>
-              <button type='submit'>Lisää</button>
-              <button type='reset'>Tyhjennä</button>
+            <div className='content_buttons'>
+              <button type='submit' className='content_button--border'>Lisää</button>
+              <button type='reset' className='content_button--border'>Tyhjennä</button>
             </div>
           </form>
         </div>

@@ -1,6 +1,6 @@
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 50px;
 }
 
@@ -14,10 +14,6 @@
   width: 75%;
 }
 
-.content_textarea {
-
-}
-
 .content_story--padding {
   padding: 20px;
 }
@@ -26,8 +22,25 @@ textarea {
   height: 50vh;
   border: 0;
   resize: none;
+  padding: 20px;
 }
 
 textarea:focus {
   outline: none;
+}
+
+.content_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content_button--border {
+  background-color: #F7EBEC;
+  border: 1px black solid;
+  width: 80px;
+  padding: 10px;
+}
+
+.content_button--border:hover {
+  background-color: #DBCBD8;
 }

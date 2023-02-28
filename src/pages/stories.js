@@ -8,21 +8,25 @@ const Stories = () => {
   const [show, setShow] = useState([])
   const [adjCount, setAdjCount] = useState(0)
 
+  /* Randomizes the order of adjectives that are added to the story */
   const showAdj = show.toString().split(',')
   const shuffledAdj = showAdj.sort(function () {
     return Math.random() - 0.5
   })
 
+  /* Shows how many adjectives the user needs to add */
   const handleChange = (event) => {
     setTextarea(event.target.value) 
     setAdjCount(event.target.value.split(', ').length)
   }
 
+  /* Resets the story to the original state */
   const handleAdjReset = (event) => {
     event.preventDefault()
     setShow([])
   }
 
+  /* Adds the adjectives to the story */
   const handleSubmit = (event) => {
     event.preventDefault()
     const data = document.getElementById('data')
@@ -30,12 +34,14 @@ const Stories = () => {
     setShow(data.value)
   }
 
+  /* Resets the adjectives form */
   const handleFormReset = (event) => {
     event.preventDefault()
     setTextarea('')
     setAdjCount(0)
   }
 
+  /* Switch statement for three different stories */
   const SwitchStory = ({ page }) => {
     switch(page) {
       case '1':
@@ -218,7 +224,7 @@ const Stories = () => {
           <div className='content--background content_story--padding'>
             <SwitchStory page={id}/>
           </div>
-          <button onClick={handleAdjReset} className='content_button--border'>Tyhjennä</button>
+          <button onClick={handleAdjReset} className='content_button--border content_button--margin'>Tyhjennä</button>
         </div>
         <div className='content_textarea'>
           <form noValidate onSubmit={handleSubmit} onReset={handleFormReset}>
@@ -231,7 +237,7 @@ const Stories = () => {
                 onChange={handleChange} />
             </div>
             <p><em>Lisää vielä {10 - adjCount} adjektiivia</em></p>
-            <div className='content_buttons'>
+            <div className='content_form-buttons'>
               <button type='submit' className='content_button--border'>Lisää</button>
               <button type='reset' className='content_button--border'>Tyhjennä</button>
             </div>

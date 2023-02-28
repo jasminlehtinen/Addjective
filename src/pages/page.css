@@ -1,23 +1,27 @@
+/* Content layout */
 .content {
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
+/* Content decoration */
 .content--background {
   background-color: white;
   border: 1px black solid;
   box-shadow: 15px 15px #ECFEAA, 15px 15px 0 1px black;
 }
 
-.content_story {
+/* Story area width */
+.content_story { 
   width: 75%;
 }
 
-.content_story--padding {
-  padding: 20px;
-}
+/* Story area padding */
+.content_story--padding { padding: 20px }
 
+/* Adjectives form layout */
 textarea {
   height: 50vh;
   border: 0;
@@ -25,15 +29,20 @@ textarea {
   padding: 20px;
 }
 
-textarea:focus {
-  outline: none;
+textarea:focus { outline: none }
+
+/* Story reset button top margin */
+.content_button--margin {
+  margin-top: 35px;
 }
 
-.content_buttons {
+/* Adjectives form buttons layout */
+.content_form-buttons {
   display: flex;
   justify-content: space-between;
 }
 
+/* Buttons decorations */
 .content_button--border {
   background-color: #F7EBEC;
   border: 1px black solid;
@@ -41,6 +50,4 @@ textarea:focus {
   padding: 10px;
 }
 
-.content_button--border:hover {
-  background-color: #DBCBD8;
-}
+.content_button--border:hover { background-color: #DBCBD8 }

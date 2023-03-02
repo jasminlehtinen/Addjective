@@ -1,5 +1,6 @@
 html, body { height: 100vh; }
 
+/* Basic page details */
 body {
   background-color: #ECE4B7;
   margin: 0;
@@ -12,9 +13,10 @@ body {
   line-height: 1.2;
 }
 
+/* Page layout */
 #root {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }

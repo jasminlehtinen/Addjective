@@ -1,5 +1,6 @@
 /* Content layout */
 .content {
+  height: 110vh;
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
@@ -14,9 +15,7 @@
 }
 
 /* Story area width */
-.content_story { 
-  width: 75%;
-}
+.content_story { width: 75% }
 
 /* Story area padding */
 .content_story--padding { padding: 20px }

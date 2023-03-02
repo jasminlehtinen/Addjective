@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className='content'>
-        Tervetuloa! Addjective on tarinageneraattori.
+        <p>Tervetuloa! Addjective on tarinageneraattori.</p>
       </div>
     </>
   )

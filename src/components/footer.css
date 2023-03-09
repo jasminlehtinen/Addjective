@@ -1,7 +1,12 @@
-.footer-flexbox {
-  background-color: #DBCBD8;
-  border-top: 1px black solid;
+/* Footer layout */
+.footer--flexbox {
   display: flex;
   justify-content: center;
   height: 50px;
+}
+
+/* Footer decoration */
+.footer--background {
+  background-color: #DBCBD8;
+  border-top: 1px black solid;
 }

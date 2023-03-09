@@ -1,7 +1,5 @@
+/* Navbar layout */
 .navbar--flexbox {
-  background-color: #757083;
-  border-bottom: 1px black solid;
-  padding: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,17 +7,27 @@
   gap: 100px;
 }
 
+/* Navbar decorations */
+.navbar--background {
+  background-color: #757083;
+  border-bottom: 1px black solid;
+  padding: 1em;
+}
+
+/* Story links layout */
 .links--flexbox {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
+/* Link decorations */
 .link--decoration {
   text-decoration: none;
   color: white;
 }
 
+/* Addjective link settings and hover animation */
 .link--decoration__big {
   font-size: 2em;
   margin-left: 50px;
@@ -33,14 +41,11 @@
   color: #757083;
 }
 
-.link--decoration__small {
-  margin: 2em;
-}
+/* Story link decorations */
+.link--decoration__small { margin: 2em }
 
-.link--decoration__small:hover {
-  text-decoration: underline;
-}
+.link--decoration__small:hover { text-decoration: underline }
 
-li {
-  list-style-type: none;
-}
+.link--decoration__small:focus { text-decoration: underline }
+
+li { list-style-type: none }

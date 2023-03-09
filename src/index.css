@@ -1,4 +1,4 @@
-html, body { height: 100vh; }
+html, body { height: 100vh; } 
 
 /* Basic page details */
 body {
@@ -13,10 +13,10 @@ body {
   line-height: 1.2;
 }
 
-/* Page layout */
+/* Basic page layout */
 #root {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }

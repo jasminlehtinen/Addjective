@@ -68,7 +68,7 @@ const Stories = () => {
                   Se päätti odottaa isompaa pukkia, ja päästi pienen pukin menemään.
                 </p>
                 <p>Kohta sillalle astui {shuffledAdj[1]}-Pukki. Kop-kop-kop, se kopisteli sillan yli.</p>
-                <p>– Kuka uskaltaa kulkea minun sillallani ? ärisi peikko.</p>
+                <p>– Kuka uskaltaa kulkea minun sillallani? ärisi peikko.</p>
                 <p>– Minä vain, {shuffledAdj[1]}-Pukki, vastasi pukki.</p>
                 <p>– Ha haa, minä tulen ylös ja syön sinut, sanoi peikko.</p>
                 <p>– Älä syö minua, huusi {shuffledAdj[1]}-Pukki. Minun isoveljeni tulee aivan kohta, hän on paljon lihavampi kuin minä.</p>
@@ -79,12 +79,12 @@ const Stories = () => {
                 <p>– Ha haa, minä tulen ylös ja syön sinut, sanoi peikko.</p>
                 <p>– Tule vain, huusi {shuffledAdj[2]} pukki.</p>
                 <p>
-                  Peikko rämpi ylös siltansa alta. Mutta ennenkuin se oli saanut kiskottua jalkansa kuivalle maalle, laski suurin pukki sarvensa tanaan ja tökkäsi ne peikon takapuoleen. 
+                  Peikko rämpi ylös siltansa alta. Mutta ennenkuin se oli saanut kiskottua jalkansa kuivalle maalle, laski {shuffledAdj[9]} pukki sarvensa tanaan ja tökkäsi ne peikon takapuoleen. 
                   Peikko lensi rähmälleen jokeen, eikä sitä nähty enää koskaan niillä main.
                 </p>
                 <p>
                   Ja niin kaikki kolme pukkia pääsivät turvallisesti niitylle. 
-                  Ruoho oli {shuffledAdj[9]} ja pukit söivät vatsansa niin täyteen, että tuskin jaksoivat kävellä kotiin. Sen pituinen se.
+                  Ruoho oli {shuffledAdj[10]} ja pukit söivät vatsansa niin täyteen, että tuskin jaksoivat kävellä kotiin. Sen pituinen se.
                 </p>
               </div>
       case '2':
@@ -114,20 +114,21 @@ const Stories = () => {
                   Ja se ryhtyi ahkerana työhön. Se muurasi ja laastasi ja rakensi taloaan kerros kerrokselta valmiiksi.
                 </p>
                 <p>
-                  Sillä välillä iso paha susi sai kuulla possujen talonrakennuspuuhista. 
+                  Sillä välillä iso {shuffledAdj[6]} susi sai kuulla possujen talonrakennuspuuhista. 
                   ”Hah”, tuumasi susi. ”Nuo possunpalleroiset minä pistelenkin suuhuni!”
                 </p>
                 <p>
-                  Eikä aikaakaan, kun susi koputti ensimmäisen pienen porsaan oveen. Susi sanoi: ”{shuffledAdj[6]} {shuffledAdj[7]} possu, päästäthän minut sisään”. 
+                  Eikä aikaakaan, kun susi koputti ensimmäisen pienen porsaan oveen. 
+                  Susi sanoi: ”{shuffledAdj[7].charAt(0).toUpperCase() + shuffledAdj[7].slice(1)} {shuffledAdj[8]} possu, päästäthän minut sisään”. 
                   Mutta pikkupossu muisti äitinsä neuvon. ”Ei, ei, kautta leukapartani, en aio päästää sisälle ketään”, se vastasi. Susi harmistui. 
                   ”Jos et päästä minua sisään, minä uhkun ja puhkun ja puhallan olkitalosi kumoon”, se vastasi.
                 </p>
                 <p>
-                  Ja niin susi puhkui ja puhalsi. Ja koska talo oli tehty oljista, se meni helposti rikki. Mutta onneksi {shuffledAdj[8]} possu ehti kuin ehtikin pakoon. 
+                  Ja niin susi puhkui ja puhalsi. Ja koska talo oli tehty oljista, se meni helposti rikki. Mutta onneksi {shuffledAdj[9]} possu ehti kuin ehtikin pakoon. 
                   Se juoksi pienillä possunsorkillaan suoraan veljensä luo turvaan. Susi jäi vihaisena makaamaan olkikasaan.
                 </p>
                 <p>
-                  Vaan eipä aikaakaan, kun iso paha susi koputti toisenkin possun ovelle. 
+                  Vaan eipä aikaakaan, kun iso {shuffledAdj[6]} susi koputti toisenkin possun ovelle. 
                   ”Kiltit pienet possut, päästäkää minut sisään”, susi huhuili taas. ”Ei avata!”, kuului possujen tiukka vastaus. 
                   ”Ei, ei, kautta leukapartamme, emme aio päästää sisälle ketään!” Susi suuttui. 
                   ”Jos ette päästä minua sisään, minä uhkun ja puhkun ja puhallan risutalonne kumoon!”
@@ -138,18 +139,18 @@ const Stories = () => {
                 </p>
                 <p>
                   Mutta eipä aikaakaan, kun susi oli löytänyt kolmannenkin possun kodin ja tuli taas ovelle kolkuttelemaan. 
-                  ”Kiltit pienet possut, päästäkää minut sisään”, huusi susi. Nyt se oli jo todella {shuffledAdj[9]}. ”Ei päästetä”, vastasivat pikkupossut yhteen ääneen. 
+                  ”Kiltit pienet possut, päästäkää minut sisään”, huusi susi. Nyt se oli jo todella {shuffledAdj[10]}. ”Ei päästetä”, vastasivat pikkupossut yhteen ääneen. 
                   ”Ei, ei, kautta leukapartamme, emme aio päästää sisälle ketään!” Susi kimpaantui. 
                   ”Jos ette päästä minua sisään, minä uhkun ja puhkun ja puhallan tämänkin talon kumoon!”
                 </p>
                 <p>
                   Ja niin susi puhkui ja puhalsi. Ja puhalsi ja puhkui. Mutta tiilitalo ei hievahtanutkaan, ei vaikka susi kuinka yritti. 
-                  Tämä talo oli näet huolellisesti rakennettu. Silloin susi huomasi talon katolla savupiipun ja sanoi : 
+                  Tämä talo oli näet huolellisesti rakennettu. Silloin susi huomasi talon katolla savupiipun ja sanoi: 
                   ”Hah, minäpä kiipeän savupiippua pitkin sisään ja tulen syömään teidät!” Possut pelästyivät, mutta eivät sanoneet mitään.
                 </p>
                 <p>
                   Sen sijaan he sytyttivät tulen takkaan ja nostivat suuren padan tulelle. Vesi lämpeni nopeasti. 
-                  Ja kun iso paha susi kiipesi savupiippua pitkin alas possujen tupaan, se molskahti suoraa päätä kuumaan pataan. 
+                  Ja kun iso {shuffledAdj[6]} susi kiipesi savupiippua pitkin alas possujen tupaan, se molskahti suoraa päätä kuumaan pataan. 
                   Susi kiljahti pelästyksestä ja juoksi matkoihinsa, eikä se enää ikinä tullut takaisin kiusaamaan possuja.
                 </p>
                 <p>
@@ -178,7 +179,7 @@ const Stories = () => {
                 <p>
                   Kultakutri näki pöydällä höyryävät puurolautaset. Puuro tuoksui niin hyvältä, että hän päätti maistaa sitä. Ensin hän maistoi suuren suuresta lautasesta. 
                   ”Tämä on aivan liian kuumaa”, hän sanoi. Sitten hän maistoi aika suuresta lautasesta. ”Tämä on ihan liian kylmää”, hän tuumi. 
-                  Ja viimein hän maistoi pikkuruiselta lautaselta. Se puuro oli juuri sopivaa, ja niin Kultakutri söi hyvällä ruokahalulla koko lautasellisen.
+                  Ja viimein hän maistoi pikkuruiselta lautaselta. Se puuro oli juuri sopivaa, ja niin Kultakutri söi hyvällä ruokahalulla koko lautasellisen.
                 </p>
                 <p>
                   Kultakutria alkoi nyt väsyttää, ja hän päätti istahtaa hetkeksi. Ensin hän istui suureen tuoliin. ”Tämä on aivan liian {shuffledAdj[4]}”, hän sanoi. 
@@ -206,10 +207,10 @@ const Stories = () => {
                 </p>
                 <p>
                   Juuri silloin Kultakutri heräsi päiväuniltaan. Kun hän näki karhut, hän pelästyi aivan kamalasti. 
-                  Kultakutri hyppäsi kiireesti ylös sängystä ja juoksi ulos ovesta ennen kuin karhut ehtivät sanoa mitään. 
+                  Kultakutri hyppäsi kiireesti ylös sängystä ja juoksi ulos ovesta ennen kuin karhut ehtivät sanoa mitään. 
                   Sitten hän juoksi juoksemistaan metsän halki, kunnes pääsi takaisin omaan kotiinsa.
                 </p>
-                <p>”Harmi, että tytölle tuli niin kova kiire”, tuumi Pikku-Karhu. ”Olisin kovin mielelläni leikkinyt hänen kanssaan.</p>
+                <p>”Harmi, että tytölle tuli niin {shuffledAdj[10]} kiire”, tuumi Pikku-Karhu. ”Olisin kovin mielelläni leikkinyt hänen kanssaan.</p>
                 <p>Mutta Kultakutri ei enää koskaan uskaltautunut metsään yksin, eikä hän enää ikinä palannut karhujen talolle. Sen pituinen se.</p>
               </div>
       default:
@@ -222,19 +223,19 @@ const Stories = () => {
     if (count === 10) {
       return <div><p><em>Adjektiivit lisätty!</em></p></div>
     }
-    return <div><p><em>Lisää vielä {10 - count} adjektiivia</em></p></div>
+    return <div><p><em>Lisää vielä {11 - count} adjektiivia</em></p></div>
   }
 
   return (
     <>
-      <div className='content'>
-        <div className='content_story'>
-          <div className='content--background content_story--padding'>
+      <div className='content--flexbox'>
+        <div className='content--flexbox__story'>
+          <div className='content--background content--background__padding'>
             <SwitchStory page={id}/>
           </div>
-          <button onClick={handleAdjReset} className='content_button--border content_button--margin'>Tyhjennä</button>
+          <button onClick={handleAdjReset} className='content--button__border content--button__margin'>Tyhjennä</button>
         </div>
-        <div className='content_textarea'>
+        <div>
           <form noValidate onSubmit={handleSubmit} onReset={handleFormReset}>
             <div className='content--background'>
               <textarea 
@@ -245,9 +246,9 @@ const Stories = () => {
                 onChange={handleChange} />
             </div>
             <AdjToAdd count={adjCount}/>
-            <div className='content_form-buttons'>
-              <button type='submit' className='content_button--border'>Lisää</button>
-              <button type='reset' className='content_button--border'>Tyhjennä</button>
+            <div className='content--form-buttons'>
+              <button type='submit' className='content--button__border'>Lisää</button>
+              <button type='reset' className='content--button__border'>Tyhjennä</button>
             </div>
           </form>
         </div>

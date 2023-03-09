@@ -1,11 +1,20 @@
-/* Content layout */
-.content {
-  height: 110vh;
+/* Content layout for the home page */
+.home--flexbox {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+/* Content layout for the story pages */
+.content--flexbox {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* Story area width */
+.content--flexbox__story { width: 75% }
 
 /* Content decoration */
 .content--background {
@@ -14,11 +23,8 @@
   box-shadow: 15px 15px #ECFEAA, 15px 15px 0 1px black;
 }
 
-/* Story area width */
-.content_story { width: 75% }
-
 /* Story area padding */
-.content_story--padding { padding: 20px }
+.content--background__padding { padding: 20px }
 
 /* Adjectives form layout */
 textarea {
@@ -31,22 +37,22 @@ textarea {
 textarea:focus { outline: none }
 
 /* Story reset button top margin */
-.content_button--margin {
+.content--button__margin {
   margin-top: 35px;
 }
 
 /* Adjectives form buttons layout */
-.content_form-buttons {
+.content--form-buttons {
   display: flex;
   justify-content: space-between;
 }
 
 /* Buttons decorations */
-.content_button--border {
+.content--button__border {
   background-color: #F7EBEC;
   border: 1px black solid;
   width: 80px;
   padding: 10px;
 }
 
-.content_button--border:hover { background-color: #DBCBD8 }
+.content--button__border:hover { background-color: #DBCBD8 }

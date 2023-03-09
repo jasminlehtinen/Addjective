@@ -4,7 +4,7 @@ import './page.css'
 const Home = () => {
   return (
     <>
-      <div className='content'>
+      <div className='home--flexbox'>
         <p>Tervetuloa! Addjective on tarinageneraattori.</p>
       </div>
     </>

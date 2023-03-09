@@ -5,7 +5,7 @@ import './navbar.css'
 const Navbar = () => {
   return (
     <>
-      <div className='navbar--flexbox'>
+      <div className='navbar--flexbox navbar--background'>
         <div>
           <li                  >
             <Link to='/' className='link--decoration link--decoration__big'>Addjective</Link>

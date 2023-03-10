@@ -46,6 +46,6 @@
 
 .link--decoration__small:hover { text-decoration: underline }
 
-.link--decoration__small:focus { text-decoration: underline }
+.link--decoration__underline { text-decoration: underline }
 
 li { list-style-type: none }

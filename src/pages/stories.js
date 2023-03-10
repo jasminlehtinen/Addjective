@@ -41,6 +41,21 @@ const Stories = () => {
     setAdjCount(0)
   }
 
+  /* Informs the user how many adjectives needs to be added */
+  const AdjToAdd = ({ count }) => {
+    if (count === 11) {
+      return <div><p><em>Adjektiivit lisätty!</em></p></div>
+    }
+    return <div><p><em>Lisää vielä {11 - count} adjektiivia</em></p></div>
+  }
+
+  /* Function to turn the first letter of an adjective to upper case */
+  const firstLetter = (adjective) => {
+    if (adjective !== undefined) {
+      return adjective.charAt(0).toUpperCase() + adjective.slice(1)
+    }
+  }
+
   /* Switch statement for three different stories */
   const SwitchStory = ({ page }) => {
     switch(page) {
@@ -75,9 +90,9 @@ const Stories = () => {
                 <p>Peikko ärjyi kiukkuisena, mutta oli kuitenkin niin {shuffledAdj[8]}, että päätti odottaa isointa pukkia.</p>
                 <p>Kohta isoin pukki tömisteli tömps-tömps-tömps sillalle.</p>
                 <p>– Kuka kulkee minun sillallani? karjui peikko taas.</p>
-                <p>– Minäpä minä, {shuffledAdj[2]} pukki, huusi pukki.</p>
+                <p>– Minäpä minä, {shuffledAdj[2]}-Pukki, huusi pukki.</p>
                 <p>– Ha haa, minä tulen ylös ja syön sinut, sanoi peikko.</p>
-                <p>– Tule vain, huusi {shuffledAdj[2]} pukki.</p>
+                <p>– Tule vain, huusi {shuffledAdj[2]}-Pukki.</p>
                 <p>
                   Peikko rämpi ylös siltansa alta. Mutta ennenkuin se oli saanut kiskottua jalkansa kuivalle maalle, laski {shuffledAdj[9]} pukki sarvensa tanaan ja tökkäsi ne peikon takapuoleen. 
                   Peikko lensi rähmälleen jokeen, eikä sitä nähty enää koskaan niillä main.
@@ -119,7 +134,7 @@ const Stories = () => {
                 </p>
                 <p>
                   Eikä aikaakaan, kun susi koputti ensimmäisen pienen porsaan oveen. 
-                  Susi sanoi: ”{shuffledAdj[7].charAt(0).toUpperCase() + shuffledAdj[7].slice(1)} {shuffledAdj[8]} possu, päästäthän minut sisään”. 
+                  Susi sanoi: ”{firstLetter(shuffledAdj[7])} {shuffledAdj[8]} possu, päästäthän minut sisään”. 
                   Mutta pikkupossu muisti äitinsä neuvon. ”Ei, ei, kautta leukapartani, en aio päästää sisälle ketään”, se vastasi. Susi harmistui. 
                   ”Jos et päästä minua sisään, minä uhkun ja puhkun ja puhallan olkitalosi kumoon”, se vastasi.
                 </p>
@@ -216,14 +231,6 @@ const Stories = () => {
       default:
         return 'Error.'
     }
-  }
-
-  /* Informs the user how many adjectives needs to be added */
-  const AdjToAdd = ({ count }) => {
-    if (count === 10) {
-      return <div><p><em>Adjektiivit lisätty!</em></p></div>
-    }
-    return <div><p><em>Lisää vielä {11 - count} adjektiivia</em></p></div>
   }
 
   return (

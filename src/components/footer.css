@@ -1,12 +1,9 @@
-/* Footer layout */
-.footer--flexbox {
+/* Footer layout and decorations */
+.footer {
   display: flex;
   justify-content: center;
   height: 50px;
-}
-
-/* Footer decoration */
-.footer--background {
   background-color: #DBCBD8;
   border-top: 1px black solid;
 }
+

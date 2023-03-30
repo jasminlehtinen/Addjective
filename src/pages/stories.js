@@ -235,16 +235,16 @@ const Stories = () => {
 
   return (
     <>
-      <div className='content--flexbox'>
-        <div className='content--flexbox__story'>
-          <div className='content--background content--background__padding'>
+      <div className='content'>
+        <div className='content__box--width'>
+          <div className='content__box--background content__box--padding'>
             <SwitchStory page={id}/>
           </div>
-          <button onClick={handleAdjReset} className='content--button__border content--button__margin'>Tyhjennä</button>
+          <button onClick={handleAdjReset} className='content__button--margin'>Tyhjennä</button>
         </div>
         <div>
           <form noValidate onSubmit={handleSubmit} onReset={handleFormReset}>
-            <div className='content--background'>
+            <div className='content__box--background'>
               <textarea 
                 type='text' 
                 id='data' 
@@ -253,9 +253,9 @@ const Stories = () => {
                 onChange={handleChange} />
             </div>
             <AdjToAdd count={adjCount}/>
-            <div className='content--form-buttons'>
-              <button type='submit' className='content--button__border'>Lisää</button>
-              <button type='reset' className='content--button__border'>Tyhjennä</button>
+            <div className='content__buttons'>
+              <button type='submit'>Lisää</button>
+              <button type='reset'>Tyhjennä</button>
             </div>
           </form>
         </div>

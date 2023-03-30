@@ -5,29 +5,29 @@ import './navbar.css'
 const Navbar = () => {
   return (
     <>
-      <nav className='navbar--flexbox navbar--background'>
+      <nav className='navbar'>
         <div>
           <li>
-            <NavLink to='/' className='link--decoration link--decoration__big'>Addjective</NavLink>
+            <NavLink to='/' className='navbar__link navbar__link--big'>Addjective</NavLink>
           </li>
         </div>
-        <div className='links--flexbox'>
+        <div className='navbar__links'>
           <li>
             <NavLink
               to='/tarina/1' 
-              className={({ isActive }) => isActive ? 'link--decoration link--decoration__small link--decoration__underline' : 'link--decoration link--decoration__small'}
+              className={({ isActive }) => isActive ? 'navbar__link navbar__link--small navbar__link--underline' : 'navbar__link navbar__link--small'}
             >Tarina 1</NavLink>
           </li>
           <li>
             <NavLink 
               to='/tarina/2' 
-              className={({ isActive }) => isActive ? 'link--decoration link--decoration__small link--decoration__underline' : 'link--decoration link--decoration__small'}
+              className={({ isActive }) => isActive ? 'navbar__link navbar__link--small navbar__link--underline' : 'navbar__link navbar__link--small'}
             >Tarina 2</NavLink>
           </li>
           <li>
             <NavLink 
               to='/tarina/3' 
-              className={({ isActive }) => isActive ? 'link--decoration link--decoration__small link--decoration__underline' : 'link--decoration link--decoration__small'}
+              className={({ isActive }) => isActive ? 'navbar__link navbar__link--small navbar__link--underline' : 'navbar__link navbar__link--small'}
             >Tarina 3</NavLink>
           </li>
         </div>

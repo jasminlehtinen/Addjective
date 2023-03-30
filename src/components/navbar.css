@@ -1,34 +1,30 @@
-/* Navbar layout */
-.navbar--flexbox {
+/* Navbar layout and decorations */
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-}
-
-/* Navbar decorations */
-.navbar--background {
   background-color: #757083;
   border-bottom: 1px black solid;
   padding: 1em;
 }
 
 /* Story links layout */
-.links--flexbox {
+.navbar__links {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
 /* Link decorations */
-.link--decoration {
+.navbar__link {
   text-decoration: none;
   color: white;
 }
 
 /* Addjective link settings and hover animation */
-.link--decoration__big {
+.navbar__link--big {
   font-size: 2em;
   margin-left: 50px;
   box-shadow: inset 0 0 0 0 white;
@@ -36,16 +32,16 @@
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.link--decoration__big:hover {
+.navbar__link--big:hover {
   box-shadow: inset 200px 0 0 0 white;
   color: #757083;
 }
 
 /* Story link decorations */
-.link--decoration__small { margin: 2em }
+.navbar__link--small { margin: 2em }
 
-.link--decoration__small:hover { text-decoration: underline }
+.navbar__link--small:hover { text-decoration: underline }
 
-.link--decoration__underline { text-decoration: underline }
+.navbar__link--underline { text-decoration: underline }
 
 li { list-style-type: none }

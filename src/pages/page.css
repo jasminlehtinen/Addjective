@@ -1,30 +1,32 @@
 /* Content layout for the home page */
-.home--flexbox {
+.home {
   height: inherit;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Content layout for the story pages */
-.content--flexbox {
+.content {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 /* Story area width */
-.content--flexbox__story { width: 75% }
+.content__box--width { width: 75% }
 
-/* Content decoration */
-.content--background {
+/* Content box decoration */
+.content__box--background {
   background-color: white;
   border: 1px black solid;
   box-shadow: 15px 15px #ECFEAA, 15px 15px 0 1px black;
 }
 
 /* Story area padding */
-.content--background__padding { padding: 20px }
+.content__box--padding { padding: 20px }
 
 /* Adjectives form layout */
 textarea {
@@ -36,23 +38,21 @@ textarea {
 
 textarea:focus { outline: none }
 
-/* Story reset button top margin */
-.content--button__margin {
-  margin-top: 35px;
-}
-
-/* Adjectives form buttons layout */
-.content--form-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Buttons decorations */
-.content--button__border {
+/* Decorations for all buttons on the page */
+button {
   background-color: #F7EBEC;
   border: 1px black solid;
   width: 80px;
   padding: 10px;
 }
 
-.content--button__border:hover { background-color: #DBCBD8 }
+button:hover { background-color: #DBCBD8 }
+
+/* Top margin for the story reset button */
+.content__button--margin { margin-top: 35px; }
+
+/* Adjectives form buttons layout */
+.content__buttons {
+  display: flex;
+  justify-content: space-between;
+}

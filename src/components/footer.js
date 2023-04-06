@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className='footer'>
-        <p>Footer</p>
+        <p>2023 Addjective. More info: github.com/jasminlehtinen/Addjective</p>
       </div>
     </>
   )

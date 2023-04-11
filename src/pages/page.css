@@ -24,7 +24,7 @@
 /* Story area width */
 .content__box--width { width: 75% }
 
-/* Content box decoration */
+/* Content box design */
 .content__box--background {
   background-color: white;
   border: 1px black solid;
@@ -44,7 +44,7 @@ textarea {
 
 textarea:focus { outline: none }
 
-/* Decorations for all buttons on the page */
+/* Designs for all the buttons on the page */
 button {
   background-color: #F7EBEC;
   border: 1px black solid;

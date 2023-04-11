@@ -1,4 +1,4 @@
-/* Navbar layout and decorations */
+/* Navbar layout and design */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -17,13 +17,13 @@
   justify-content: flex-start;
 }
 
-/* Link decorations */
+/* Link design */
 .navbar__link {
   text-decoration: none;
   color: white;
 }
 
-/* Addjective link settings and hover animation */
+/* Addjective link design and hover animation */
 .navbar__link--big {
   font-size: 2em;
   margin-left: 50px;
@@ -37,7 +37,7 @@
   color: #757083;
 }
 
-/* Story link decorations */
+/* Specific designs for story links */
 .navbar__link--small { margin: 2em }
 
 .navbar__link--small:hover { text-decoration: underline }

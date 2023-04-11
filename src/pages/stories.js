@@ -15,7 +15,7 @@ const Stories = () => {
     return Math.random() - 0.5
   })
 
-  /* Shows how many adjectives the user needs to add */
+  /* Shows / counts how many adjectives the user has added */
   const handleChange = (event) => {
     setTextarea(event.target.value) 
     setAdjCount(event.target.value.split(/,\s\w/).length)

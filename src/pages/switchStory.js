@@ -2,14 +2,14 @@ import React from 'react'
 
 const SwitchStory = ({ page, adj }) => {
 
-  /* Function to turn the first letter of an adjective to upper case */
+  // Function to turn the first letter of an adjective to upper case
   const firstLetter = (adjective) => {
     if (adjective !== undefined) {
       return adjective.charAt(0).toUpperCase() + adjective.slice(1)
     }
   }
 
-  /* Switch statement for three different stories */
+  // Switch statement for three different stories
   switch(page) {
     case '1':
       return <div>  
